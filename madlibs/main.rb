@@ -37,7 +37,6 @@ def mad_libs(string)
   end
 
   final.each do |var|
-
     unless string[var[0]].nil?
       string[var[0].to_s] = var[1].to_s
     end
@@ -45,9 +44,10 @@ def mad_libs(string)
   print "\nResult: #{string}\n"
 end
 
-
-#string = 'I had a ((an adjective)) sandwich for lunch today. It dripped all over my ((a body part)) and ((a noun)).'
-#mad_libs string
+# Too lazy to add an option to read stuff from a text file
+# Demonstration:
+string = 'I had a ((an adjective)) sandwich for lunch today. It dripped all over my ((a body part)) and ((a noun)).'
+mad_libs string
 string = 'Our favourite language is ((gem: a gemstone)). We think ((gem)) is better than ((a gemstone))'
 mad_libs string
 string = 'No tokens in here'
